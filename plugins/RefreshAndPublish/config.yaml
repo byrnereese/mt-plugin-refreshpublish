@@ -1,0 +1,14 @@
+name: Refresh and Publish
+id: RefreshAndPublish 
+description: "A plugin that will refresh a template and publish it all in one go."
+version: 1.0
+
+list_actions:
+  template:
+    refpub:
+      label: "Refresh and Publish"
+      code: $RefreshAndPublish::RefreshAndPublish::Plugin::refpub
+      permission: "edit_templates,rebuild"
+      order: 101
+      condition: $RefreshAndPublish::RefreshAndPublish::Plugin::cond
+
